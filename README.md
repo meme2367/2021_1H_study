@@ -1,5 +1,3 @@
-# 2021_1H_study
-
 ## 리뷰 방법
 
 우리 스터디에서는 Github의 PR(Pull Request)를 이용해서 리뷰를 합니다.
