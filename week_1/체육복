@@ -21,14 +21,13 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
                 s[i]--;
                 s[i-1]++;
             }
-        }
         
-        if(s[i]==1){
-            if(i!=s.size()&&s[i+1]==-1){
+            else if(i!=s.size()&&s[i+1]==-1){
                 s[i]--;
                 s[i+1]++;
             }
         }
+            
         
     }
     
