@@ -33,16 +33,16 @@ class Solution {
         for(int i = 0;i<tmp.length;i++) {
             tmp[i]  = i;    
         }
-        
-        for(int i = 0;i<computers.length;i++) {
-            for(int j = 0;j<computers[i].length;j++) {
+        //절반
+        for(int i = 0;i<computers.length-1;i++) {
+            for(int j = i+1;j<computers[i].length;j++) {
+               
+                
                 if(computers[i][j] == 1) {
-                    if(i == j) {
-                        continue;
-                    } else {
+                    
                     
                         union(i,j);
-                    }
+                    
                 
                 }
             }
@@ -70,7 +70,7 @@ class Solution {
         if(v == tmp[v]) {
             return v;
         } else {
-            return find(tmp[v]);
+            return tmp[v] = find(tmp[v]);
         }
     }
 }
